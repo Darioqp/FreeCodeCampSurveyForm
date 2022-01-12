@@ -1,0 +1,2 @@
+Esta es una página que es el resultado de un ejercicio del curso de responsive web design en FreeCodeCamp.org
+La misma contiene un formulario que sirve para recopilar datos en relación a las necesidades de posibles clientes de una página de clases online de matemática para el nivel secundario.
