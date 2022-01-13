@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Survey Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1 id="title">Online Math Survey Form</h1>
-            <p id="description">Thank you for helping us to improve the platform.</p>
-        </header>
-        <form action="" id="survey-form">
-            
-        </form>
+      <header>
+        <h1 id="title">Online Math Survey Form</h1>
+        <p id="description">
+          Thank you for helping us to improve the platform.
+        </p>
+      </header>
+      <form action="" id="survey-form">
+          <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label id="lname-label" for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+          </div>
+          <div class="form-group">
+              <label id="email-label" for="mail">Email</label>
+              <input type="email" name="mail" id="mail" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+              <label id="number-label" for="number">Age (optional)</label>
+              <input type="number" name="numer-label" id="number-label" placeholder="Age" min="10" max="100">
+          </div>
+          <div class="form-group">
+            <p>What is your current educational level?</p>
+            <input type="radio" name="study-level" id="middle-school" checked>
+            <label for="middle-school">Middle-school</label>
+            <input type="radio" name="study-level" id="high-school">
+            <label for="high-school">high-school</label>
+            <input type="radio" name="study-level" id="college">
+            <label for="college">College</label>
+            <input type="radio" name="study-level" id="university">
+            <label for="university">University</label>
+          </div>
+          <div class="form-group">
+            <p>What area of Mathematics is most difficult for you to learn?</p>
+            <select name="area" id="dropdown">
+              <option value="arithmetic">Arithmetic</option>
+              <option value="algebra">Algebra</option>
+              <option value="geometry">Geometry</option>
+              <option value="statistics">Statistics</option>
+              <option value="mathematical-analysis">Mathematical analysis</option>
+            </select>
+          </div>
+          <div class="form-group">
+
+          </div>
+          <div class="form-group">
+            <p>Through what means do you learn mathematics?</p>
+            <input type="checkbox" name="media1" id="media1" value="youtube">
+            <label for="media1">YouTube</label>
+            <input type="checkbox" name="media2" id="media2" value="books">
+            <label for="media2">Books</label>
+            <input type="checkbox" name="media3" id="media3" value="online-classes">
+            <label for="media3">Online classes</label>
+            <input type="checkbox" name="media4" id="media4" value="private-teacher">
+            <label for="media4">Private teacher</label>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
