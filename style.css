@@ -6,3 +6,10 @@ html {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
 }
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_960_720.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
