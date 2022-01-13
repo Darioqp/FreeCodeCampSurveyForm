@@ -15,44 +15,47 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container1">
       <header>
         <h1 id="title">Online Math Survey Form</h1>
         <p id="description">
           Thank you for helping us to improve the platform.
         </p>
       </header>
+    </div>
+    <div class="container2">
       <form action="" id="survey-form">
           <div class="form-group">
               <label id="name-label" for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+              <input type="text" name="name" id="name" placeholder="Enter your name" class="form-input" required>
           </div>
           <div class="form-group">
             <label id="lname-label" for="lname">Last name</label>
-            <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name" class="form-input" required>
           </div>
           <div class="form-group">
               <label id="email-label" for="mail">Email</label>
-              <input type="email" name="mail" id="mail" placeholder="Enter your email" required>
+              <input type="email" name="mail" id="mail" placeholder="Enter your email" class="form-input" required>
           </div>
           <div class="form-group">
               <label id="number-label" for="number">Age (optional)</label>
-              <input type="number" name="numer-label" id="number-label" placeholder="Age" min="10" max="100">
+              <input type="number" name="numer-label" id="number-label" placeholder="Age" min="10" max="100" class="form-input">
           </div>
           <div class="form-group">
-            <p>What is your current educational level?</p>
-            <input type="radio" name="study-level" id="middle-school" checked>
-            <label for="middle-school">Middle-school</label>
-            <input type="radio" name="study-level" id="high-school">
-            <label for="high-school">high-school</label>
-            <input type="radio" name="study-level" id="college">
-            <label for="college">College</label>
-            <input type="radio" name="study-level" id="university">
-            <label for="university">University</label>
+            <p class="questions">What is your current educational level?</p>
+            <label for="middle-school"><input type="radio" name="study-level" id="middle-school" class="input-radio">
+            Middle-school</label>
+            <label for="high-school"><input type="radio" name="study-level" id="high-school" class="input-radio">
+            high-school</label>
+            <label for="college"><input type="radio" name="study-level" id="college" class="input-radio">
+            College</label>
+            <label for="university"><input type="radio" name="study-level" id="university" class="input-radio">
+            University</label>
           </div>
           <div class="form-group">
-            <p>What area of Mathematics is most difficult for you to learn?</p>
-            <select name="area" id="dropdown">
+            <p class="questions">What area of Mathematics is most difficult for you to learn?</p>
+            <select name="area" id="dropdown" class="form-input">
+              <option disabled selected value>Select an option</option>
               <option value="arithmetic">Arithmetic</option>
               <option value="algebra">Algebra</option>
               <option value="geometry">Geometry</option>
@@ -61,27 +64,25 @@
             </select>
           </div>
           <div class="form-group">
-
-          </div>
-          <div class="form-group">
             <p>Through what means do you learn mathematics?</p>
-            <input type="checkbox" name="media1" id="media1" value="youtube">
-            <label for="media1">YouTube</label>
-            <input type="checkbox" name="media2" id="media2" value="books">
-            <label for="media2">Books</label>
-            <input type="checkbox" name="media3" id="media3" value="online-classes">
-            <label for="media3">Online classes</label>
-            <input type="checkbox" name="media4" id="media4" value="private-teacher">
-            <label for="media4">Private teacher</label>
+            <label for="media1"><input type="checkbox" name="media1" id="media1" value="youtube" class="checkbox-item">
+            YouTube</label>
+            <label for="media2"><input type="checkbox" name="media2" id="media2" value="books" class="checkbox-item">
+            Books</label>
+            <label for="media3"><input type="checkbox" name="media3" id="media3" value="online-classes" class="checkbox-item">
+            Online classes</label>
+            <label for="media4"><input type="checkbox" name="media4" id="media4" value="private-teacher" class="checkbox-item">
+            Private teacher</label>
           </div>
           <div class="form-group">
-            <p>Any comments or suggestions?</p>
-            <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+            <p class="questions">Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" placeholder="Enter your comment here..." class="form-input"></textarea>
           </div>
           <div class="form-group">
-            <button type="submit">Submit</button>
+            <button class="btn-submit" type="submit">Submit</button>
           </div>
       </form>
+    </div>
     </div>
   </body>
 </html>
